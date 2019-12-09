@@ -1,9 +1,9 @@
 <hello name="{{ name }}"></hello>
 
-<div *ngFor="let k of komunikaty">
+<div *ngFor="let n of komunikaty">
 <app-komunikat [k]="n"> </app-komunikat>
 </div>
-
+<br>
     <div *ngFor="let k of komunikaty"> <span *ngIf="k.wazny"> WAŻNE! </span>
       {{k.tresc}} ({{k.dataDodania | date:'medium'}})  
 </div>
