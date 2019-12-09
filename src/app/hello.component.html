@@ -1,0 +1,5 @@
+<hello name="{{ name }}"></hello>
+
+    <div *ngFor="let k of komunikaty"> <span *ngIf="k.wazny"> WAŻNE! </span>
+      {{k.tresc}} ({{k.dataDodania | date:'medium'}})  
+</div>
